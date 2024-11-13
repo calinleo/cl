@@ -203,11 +203,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <!-- <img
+              <img style="height: 250px;"
                 class="img-fluid"
-                src="./assets/img/portfolio/dbs.png"
-                alt="SQL Query"
-              /> -->
+                src="./assets/img/portfolio/signin_user_flow.png"
+                alt="User Flow"
+              />
             </div>
           </div>
 
@@ -215,7 +215,7 @@
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
-              data-target="#portfolioModal4"
+              data-target="#userflow"
             >
               <div
                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -484,9 +484,8 @@ aria-hidden="true"
   </div>
 </div>
 </div>
- <!-- end finance section -->
 
-<!-- start SQL section -->
+
     <div
       class="portfolio-modal modal fade"
       id="addressToolWebApp"
@@ -511,7 +510,7 @@ aria-hidden="true"
               <div class="row justify-content-center">
                 <div class="col-lg-8">
                   <h2 class="portfolio-modal-title text-secondary mb-0">
-                    Database SQL Query
+                    User Flow for Sign In
                   </h2>
 
                   <div class="divider-custom">
@@ -522,40 +521,13 @@ aria-hidden="true"
                     <div class="divider-custom-line"></div>
                   </div>
 
-                  <div class="row"></div>
-                    <div class="font-weight-bold text-left">
-                      Problem:
-                    </div>
-                    <div class="text-left">
-                      A database administrator needs to retrieve data about customers who have placed more than 5 orders from an e-commerce database. The database has two tables: customers and orders. The customers table contains customer information, and the orders table stores individual order records with a foreign key that links to the customers table. The admin isn't sure how to write the SQL query to find customers with more than 5 orders.
-                    </div>
-                    <div class="font-weight-bold text-left mt-5">
-                      Solution:
-                    </div>
-                    <div class="text-left">
-                      To solve this, the administrator can use SQL with the JOIN, GROUP BY, and HAVING clauses to group the orders by customer and filter those with more than 5 orders.
-                    </div>
-                    <div class="font-weight-bold text-left mt-3">
-                      1. Table Structure:
-                    </div>
-                    <div class="text-left">
-                      <ul><li><p><code>customers</code> table:</p><ul><li><code>customer_id</code> (Primary Key)</li><li><code>name</code></li><li><code>email</code></li></ul></li><li><p><code>orders</code> table:</p><ul><li><code>order_id</code> (Primary Key)</li><li><code>customer_id</code> (Foreign Key)</li><li><code>order_date</code></li><li><code>amount</code></li></ul></li></ul>
-                    </div>
-
-                    <div class="font-weight-bold text-left mt-3">
-                      2. SQL Query:
-                    </div>
-                    <div>
-                      <img class="img-fluid" src="./assets/img/portfolio/sql.png" alt="SQL Query">
-                    </div>
-                    <div class="text-left mt-1">
-                      This query will return a list of customers who have made more than 5 orders, along with their details and the total number of orders placed.
-                    </div>
-                    <div class="font-weight-bold text-left mt-3">
-                      3. Explanation:
-                    </div>
-                    <div class="text-left">
-                      <ul><li><strong>JOIN</strong>: The query uses an <code>INNER JOIN</code> to combine the <code>customers</code> and <code>orders</code> tables, linking them via the <code>customer_id</code> field.</li><li><strong>GROUP BY</strong>: The <code>GROUP BY</code> clause groups the results by each customer (<code>c.customer_id, c.name, c.email</code>), so the query can count the number of orders for each customer.</li><li><strong>HAVING</strong>: The <code>HAVING</code> clause filters out groups with fewer than or equal to 5 orders, only returning customers with more than 5 orders.</li><li><strong>COUNT()</strong>: The <code>COUNT(o.order_id)</code> function counts the number of orders each customer has placed.</li></ul>
+                    <div class="row">
+                      <div>
+                        <p>Sign in user flow wireframe</p>
+                        <img class="img-fluid rounded mb-5" 
+                          src="./assets/img/portfolio/signin_user_flow.png" 
+                          alt="Sign in user flow"/>
+                      </div>
                     </div>
                     
                   </div>
@@ -576,10 +548,10 @@ aria-hidden="true"
 
     <div
       class="portfolio-modal modal fade"
-      id="portfolioModal4"
+      id="userflow"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="#portfolioModal4Label"
+      aria-labelledby="#userflowLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl" role="document">
