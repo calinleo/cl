@@ -131,6 +131,29 @@
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
+              data-target="#hifiPrototype"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img style="height: 250px;"
+                class="img-fluid"
+                src="./assets/img/portfolio/hifi_useCases.png"
+                alt="High-Fidelity Prototype"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
               data-target="#uxdesign"
             >
               <div
@@ -250,13 +273,13 @@
                 </div>
               </div>
               
-              <!-- <img class="img-fluid" src="./assets/img/portfolio/AI_Generated_Futuristic.jpeg" alt="Futuristic City"> -->
+              <img  style="height: 250px;"
+                    class="img-fluid" 
+                    src="./assets/img/portfolio/AB_testing.png" alt="AB Testing">
             </div>
           </div>
-          <div style="color: #818181;">portfolio in progress ... will add more soon</div>
-
-
         </div>
+        <div class="text-center" style="color: #818181;">portfolio in progress ... will add more soon</div>
       </div>
     </section>
 
@@ -312,8 +335,60 @@
     </div>
 
 
+<!-- start hifi prototype -->
+<div
+class="portfolio-modal modal fade"
+id="hifiPrototype"
+tabindex="-1"
+role="dialog"
+aria-labelledby="#hifiPrototypeLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-xl" role="document">
+  <div class="modal-content">
+    <button
+      class="close"
+      type="button"
+      data-dismiss="modal"
+      aria-label="Close"
+    >
+      <span aria-hidden="true"><i class="fas fa-times"></i></span>
+    </button>
 
-
+    <div class="modal-body text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="portfolio-modal-title text-secondary mb-0">
+              HiFi Ptototype - Use cases
+            </h2>
+            <div class="divider-custom">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+              <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+              <div>
+                <div>High-Fidelity Prototype - 3 use cases </div>
+                <img class="img-fluid rounded mb-2" src="assets/img/portfolio/hifi_prototype_usecases.png" alt="HiFi Prototype"/>
+                <div class="mb-5">
+                  <a href="https://xd.adobe.com/view/b73a46e2-43ea-44da-aaa0-6331efa15882-e269/" target="_blank">Live link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <button class="btn btn-primary" href="#" data-dismiss="modal">
+              <i class="fas fa-times fa-fw"></i>Close Window
+            </button>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end hifi prototype -->
 
 <!-- start python section -->
 <div
@@ -571,7 +646,7 @@ aria-hidden="true"
               <div class="row justify-content-center">
                 <div class="col-lg-8">
                   <h2 class="portfolio-modal-title text-secondary mb-0">
-                    Heat Map
+                    UX Analytics - Heatmaps
                   </h2>
 
                   <div class="divider-custom">
@@ -586,6 +661,8 @@ aria-hidden="true"
 
 
                   <div class="row">
+                    <div class="mb-3 text-center">A visual representation of data that uses colors to show how users interact with 
+                      a website.</div>
                     <div>
                       <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/heat_map.png" alt="Heat Map">
                     </div>
@@ -631,7 +708,7 @@ aria-hidden="true"
               <div class="row justify-content-center">
                 <div class="col-lg-8">
                   <h2 class="portfolio-modal-title text-secondary mb-0">
-                    Image generation
+                    UX Analytics - A/B Testing
                   </h2>
 
                   <div class="divider-custom">
@@ -642,42 +719,10 @@ aria-hidden="true"
                     <div class="divider-custom-line"></div>
                   </div>
                   <div class="row">
-                    <div class="font-weight-bold text-left">
-                      Problem:
-                    </div>
-                    <div class="text-left">
-                      A user wants to generate a unique image of a futuristic
-                      city at night, filled with neon lights, flying cars, and
-                      towering skyscrapers. They also want a cyberpunk
-                      aesthetic, but they don't know how to prompt an AI to
-                      create this image. They are unsure of the level of detail
-                      required and how to describe the visual elements they have
-                      in mind.
-                    </div>
-                    <div class="font-weight-bold text-left mt-5">
-                      Solution:
-                    </div>
-                    <div class="text-left">
-                      The key to solving this problem is creating a detailed and
-                      descriptive prompt that allows the AI to capture the
-                      essence of the scene. Here’s an example of how to
-                      construct an effective prompt.
-                    </div>
-                    <div class="font-weight-bold text-left mt-5">
-                      Prompt:
-                    </div>
-                    <div class="text-left">
-                      "Create an image of a futuristic city at night. 
-                      The scene should have a cyberpunk aesthetic with vibrant neon lights 
-                      illuminating the city. Include towering skyscrapers with glowing 
-                      advertisements and billboards. Flying cars should be seen zipping 
-                      through the air. The streets below should be filled with people in 
-                      futuristic attire and robots, with a dark, rainy atmosphere reflecting 
-                      the neon glow. The overall vibe should feel technologically advanced, 
-                      bustling, and slightly dystopian."
-                    </div>
-                    <div class="mt-4">
-                      <img class="img-fluid" src="./assets/img/portfolio/AI_Generated_Futuristic.jpeg">
+                    <div class="mb-3">A user experience research method that compares two or more 
+                      versions of a page or content to determine which one performs better</div>
+                    <div>
+                      <img class="img-fluid" src="./assets/img/portfolio/AB_testing.png" alt="AB Testing">
                     </div>
 
                   </div>
