@@ -7,10 +7,7 @@
     <meta name="author" content="" />
     <title>Calin Leordean - Portfolio</title>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
     <link href="css/styles.css" rel="stylesheet" />
 
@@ -138,48 +135,44 @@
             </div>
           </div>
 <!-- end dashboard  -->
+ <!-- start flexbox  -->
           <div class="col-md-6 col-lg-4 mb-5">
-            <div style="position: relative;"
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#uisliderproject"
-            >
+            <div style="position: relative;" class="portfolio-item mx-auto" data-toggle="modal" data-target="#uiflexbox">
               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
+                <div class="portfolio-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-2x"></i>
+                  <p>Proper 3 Cards Layout</p>
                 </div>
               </div>
-              <img class="img-fluid"
-                src="./assets/img/portfolio/ui-slider.png"
-                alt="UI Slider"
-              />
+              <img class="img-fluid" src="./assets/img/portfolio/flexboxCSS.png" alt="UI Flexbox"/>
             </div>
           </div>
-
+<!-- end flexbox  -->
+  <!-- start login  -->
           <div class="col-md-6 col-lg-4 mb-5">
-            <div style="position: relative;"
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#toytradeproject"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
+            <div style="position: relative;" class="portfolio-item mx-auto" data-toggle="modal" data-target="#uisliderproject">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white">
+                  <i class="fas fa-plus fa-2x"></i>
+                  <p>UI Login Slider</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="./assets/img/portfolio/ui-slider.png" alt="UI Login Slider"/>
+            </div>
+          </div>
+<!-- end login  -->
+ <!-- start quantitative  -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div style="position: relative;" class="portfolio-item mx-auto" data-toggle="modal" data-target="#toytradeproject">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white">
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid"
-                src="./assets/img/portfolio/toytrade.png"
-                alt="ToyTrade Ecommerce"
-              />
+              <img class="img-fluid" src="./assets/img/portfolio/toytrade.png" alt="ToyTrade Ecommerce"/>
             </div>
           </div>
-
+<!-- end quantitative  -->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
@@ -406,14 +399,7 @@
       </div>
     </div>
 <!-- start admin dashboard -->
-<div
-class="portfolio-modal modal fade"
-id="admindashboardproject"
-tabindex="-1"
-role="dialog"
-aria-labelledby="#admindashboardprojectLabel"
-aria-hidden="true"
->
+<div class="portfolio-modal modal fade" id="admindashboardproject" tabindex="-1" role="dialog" aria-labelledby="#admindashboardprojectLabel" aria-hidden="true">
 <div class="modal-dialog modal-xl" role="document">
   <div class="modal-content">
     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -425,7 +411,7 @@ aria-hidden="true"
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <h2 class="portfolio-modal-title text-secondary mb-0">
-              Admin Dashboard 
+              Admin Dashboard
             </h2>
             <div class="divider-custom">
               <div class="divider-custom-line"></div>
@@ -460,7 +446,77 @@ aria-hidden="true"
 </div>
 </div>
 <!-- end admin dashboard -->
+<!-- stat uiflexbox  -->
+<div class="portfolio-modal modal fade" id="uiflexbox" tabindex="-1" role="dialog" aria-labelledby="#uiflexboxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+      </button>
 
+    <div class="modal-body text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="portfolio-modal-title text-secondary mb-0">
+              UI Element - Flexbox CSS Use Case
+            </h2>
+            <div class="divider-custom">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+              <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+              <div>
+                <div class="mb-3">A very popular 3-Cards-Layout UI element that many websites are not using it properly </div>
+                <h5>This is what we want to achieve:</h5>
+                <div>
+                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/flexboxCSS_1.png" alt="FlexboxCSS"/>
+                </div>
+
+              </div>
+              <div class="col-lg-12 mb-5 mb-lg-0">
+                <div>
+                  <h5>We have 3 Cards with different text length</h5>
+                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/flexboxCSS_0.png" alt="FlexboxCSS"/>
+                </div>
+                <div>
+                  <h5>Adding <code>.flex-container .card {display:flex;
+                    flex-direction:column;
+                    flex:1
+                    }
+                    </code> the layout improves and many websites are leaving the cards just like this:</h5>
+                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/flexboxCSS_2.png" alt="FlexboxCSS"/>
+                </div>
+                <div>
+                  <h5>But it can be improved by aligning the buttons as well.<br/> 
+                    To achieve this we need to target the p element<br/>
+                  <code>
+                    .flex-container .card p {flex-grow: 1;}
+                    </code></h5>
+                </div>
+                <div>
+                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/flexboxCSS_1.png" alt="FlexboxCSS"/>
+                </div>
+                <!-- <a class="btn btn-outline-dark btn-social mx-1"
+                   target="_blank" href="https://github.com/calinleo/Login_Register_Slider">
+                   <i class="fab fa-fw fa-github"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+            <button class="btn btn-primary mt-5" href="#" data-dismiss="modal">
+              <i class="fas fa-times fa-fw"></i>Close Window
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+ <!-- end uiflexbox  -->
 <!-- start ui-slider project  -->
  <div
 class="portfolio-modal modal fade"
