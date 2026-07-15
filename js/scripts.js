@@ -15,7 +15,7 @@
             scrollTop: target.offset().top - 71,
           },
           1000,
-          "easeInOutExpo"
+          "easeInOutExpo",
         );
         return false;
       }
@@ -57,7 +57,7 @@
       .on("input propertychange", ".floating-label-form-group", function (e) {
         $(this).toggleClass(
           "floating-label-form-group-with-value",
-          !!$(e.target).val()
+          !!$(e.target).val(),
         );
       })
       .on("focus", ".floating-label-form-group", function () {
@@ -68,3 +68,35 @@
       });
   });
 })(jQuery);
+// start  js typed
+const typed = new Typed(".multiple-text", {
+  strings: [
+    "UX/UI Designer",
+    "Web Developer",
+    "Digital Designer",
+    "FrontEnd Developer",
+    "Product Designer",
+    "UX Engineer",
+    "AI Practitioner",
+  ],
+  typeSpeed: 100,
+  backSpeed: 25,
+  backDelay: 2000,
+  loop: true,
+});
+const typedAbout = new Typed(".multiple-text-about", {
+  strings: [
+    "UX/UI Designer",
+    "Web Developer",
+    "Digital Designer",
+    "FrontEnd Developer",
+    "Product Designer",
+    "UX Engineer",
+    "AI Practitioner",
+  ],
+  typeSpeed: 100,
+  backSpeed: 25,
+  backDelay: 2000,
+  loop: true,
+});
+// end js typed
